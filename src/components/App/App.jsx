@@ -12,7 +12,6 @@ const initialsContacts = () =>
 export default function App() {
   const [contacts, setContacts] = useState(initialsContacts);
   const [filterValue, setFilterValue] = useState('');
-  console.log(contacts);
 
   useEffect(() => {
     localStorage.setItem('saved_contacts', JSON.stringify(contacts));
